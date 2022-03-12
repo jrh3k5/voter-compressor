@@ -1,4 +1,5 @@
 import csv
+import sys
 
 class Address:
     def __init__(self, precinct, house_number, pre_direction, street_name, street_type, unit_type, unit_num, city, state, zip_code, combined_address):
@@ -175,8 +176,8 @@ def build_address_key(address):
     ":unit_num:" + address.unit_num)
 
 
-
-
-
-
-
+if __name__ == '__main__':
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+    print("Transforming file '" + input_file + "' to file '" + output_file + "'")
+    compress_csv(input_file, output_file)
