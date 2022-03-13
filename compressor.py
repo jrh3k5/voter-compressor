@@ -66,6 +66,7 @@ def compress_csv(input_file_path, output_file_path):
         address_keys.sort()
 
         precinct_idx = column_mappings["precinct"]
+        last_name_idx = column_mappings["last name"]
         house_num_idx = column_mappings["hs num"]
         pre_direction_idx = column_mappings["pre direction"]
         street_name_idx = column_mappings["street name"]
@@ -125,6 +126,7 @@ def compress_csv(input_file_path, output_file_path):
                         new_first = new_first + " AND " + combined_family
 
             output_row[precinct_idx] = address.precinct
+            output_row[last_name_idx] = last_names[0]
             output_row[pre_direction_idx] = address.pre_direction
             output_row[house_num_idx] = address.house_number
             output_row[street_name_idx] = address.street_name

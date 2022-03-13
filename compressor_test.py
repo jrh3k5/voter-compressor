@@ -38,7 +38,7 @@ class TestCompressor(unittest.TestCase):
                             "Column1"], header_row)
         
         self.assertEqual(["47",
-                            "",
+                            "GAVILAR",
                             "",
                             "NAVANI GAVILAR AND DALINAR KHOLIN",
                             "100",
@@ -53,7 +53,7 @@ class TestCompressor(unittest.TestCase):
                             "100 N KING'S WAY KHOLINAR AK 87483"], rows[0])
 
         self.assertEqual(["56",
-                            "",
+                            "PAINT",
                             "",
                             "MR AND MS PAINT",
                             "1",
@@ -68,7 +68,7 @@ class TestCompressor(unittest.TestCase):
                             "1 MICROSOFT WAY REDMOND WA 98052"], rows[1])
 
         self.assertEqual(["66",
-                            "",
+                            "ORGANA",
                             "",
                             "BREHA ORGANA",
                             "10",
@@ -84,7 +84,7 @@ class TestCompressor(unittest.TestCase):
                             "10 MONARC PL ALDERAAN AL 421"], rows[2])
 
         self.assertEqual(["66",
-                            "",
+                            "ORGANA",
                             "",
                             "BAIL ORGANA",
                             "1",
@@ -99,7 +99,7 @@ class TestCompressor(unittest.TestCase):
                             "1 SENATOR PL ALDERAAN AL 421"], rows[3])
 
         self.assertEqual(["72",
-                            "",
+                            "KHOLIN",
                             "",
                             "ADOLIN KHOLIN",
                             "100",
@@ -114,7 +114,7 @@ class TestCompressor(unittest.TestCase):
                             "100 S KING'S WAY KHOLINAR APT 82 AK 87483"], rows[4])
 
         self.assertEqual(["88",
-                            "",
+                            "AYBARA",
                             "",
                             "PERRIN AYBARA",
                             "1000",
@@ -129,7 +129,7 @@ class TestCompressor(unittest.TestCase):
                             "1000 WOLF'S DEN DR MANETHERN MN 467374"], rows[5])
 
         self.assertEqual(["88",
-                            "",
+                            "AL'THOR",
                             "",
                             "RAND AL'THOR",
                             "1000",
@@ -144,7 +144,7 @@ class TestCompressor(unittest.TestCase):
                             "1000 DRAGON DR TWO RIVERS MN"], rows[6])
 
         self.assertEqual(["88",
-                            "",
+                            "AL'VERE",
                             "",
                             "EGWENE AL'VERE",
                             "1000",
@@ -159,7 +159,7 @@ class TestCompressor(unittest.TestCase):
                             "1000 AMYRLIN ST TAR VALON AS 7483"], rows[7])
 
         self.assertEqual(["92",
-                            "",
+                            "BRADY",
                             "",
                             "JAN, MARCIA, AND MIKE BRADY",
                             "4222",
